@@ -2,8 +2,9 @@
 Javascript 
 
 
-JS Simple demo functionality
+JS Simple demo functionalities
 
+Example 1 : tun-on-off-light.html
 Kindly Switch On the Light
 
 As we all know JavaScript can change HTML attribute values.
