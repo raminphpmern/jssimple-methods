@@ -1,0 +1,41 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <script>
+  function turnOnLight() {
+	let mySwitch = document.getElementById('mySwitch').src
+	let switchSrcVal = mySwitch.substring(mySwitch.lastIndexOf('/') + 1);
+	console.log("mySwitch---",mySwitch.lastIndexOf('/') + 1)
+	console.log("mySwitch 2---",switchSrcVal.search('off'))
+	console.log("mySwitch 2---",mySwitch.substring(mySwitch.lastIndexOf('/') + 1))
+	if(switchSrcVal.includes('off')) {
+	console.log("bulbSrc 1---",switchSrcVal)
+		document.getElementById('myBulb').src='imgs/bulb-on.gif';
+		document.getElementById('mySwitch').src='imgs/switch-on.jpg';
+	} else if(switchSrcVal.search('on')) {
+	console.log("bulbSrc 2---",switchSrcVal)
+	document.getElementById('myBulb').src='imgs/bulb-off.gif';
+		document.getElementById('mySwitch').src='imgs/switch-off.jpg';
+	}
+	
+  }
+  
+  </script>
+  </head>
+  <body>
+
+  <h2>Kindly Switch On the Light</h2>
+
+  <p>JavaScript can change HTML attribute values. 
+  I used Substring and lastIndexOf to extract the characters from the Src attribute & used Includes method to find the specified string from the src</p>
+
+  <p>In this case JavaScript changes the value of the src (source) attribute of an image to make the light & switch On/Off.</p>
+
+  
+
+  <img id="myBulb" src="imgs/bulb-off.gif" style="width:100px">
+  <br><br>  
+  <img id="mySwitch" src="imgs/switch-off.jpg" style="width:100px" onclick="turnOnLight()">
+
+  </body>
+  </html>
