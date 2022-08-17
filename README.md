@@ -4,7 +4,7 @@ Javascript
 
 JS Simple demo functionalities
 
-Example 1 : tun-on-off-light.html
+Example 1 : turn-on-off-light.html
 Kindly Switch On/Off to make the bulb glow 
 
 As we all know JavaScript can change HTML attribute values.
